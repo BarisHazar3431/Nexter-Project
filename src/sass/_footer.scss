@@ -1,0 +1,45 @@
+.footer {
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
+  padding: 8rem;
+}
+
+.footer-nav {
+  &__items {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    padding: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-display;
+    font-size: 1.4rem;
+    color: white;
+    transition: all 0.2s;
+    display: block;
+    text-align: center;
+    &:hover,
+    &:focus {
+      transform: translateY(-0.5rem);
+      background-color: lighten($color-secondary, 6%);
+    }
+  }
+
+  &__copyright {
+    color: $color-grey-light-2;
+    max-width: 85ch;
+    margin-inline: auto;
+    margin-top: 6rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
